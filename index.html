@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onmousedown</title>
+</head>
+<body>
+
+
+     <h4 id="h1" style="color: red;">Hey body try to click text with your mouse!!!</h4>
+
+    <p id="mytext" onmousedown="mouseDown()" onmouseup="mouseUp()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae accusantium quasi ut nulla magni obcaecati natus nam magnam facilis! Voluptatibus laborum eaque, fugit quasi similique culpa. Inventore aut distinctio laboriosam.</p>
+    
+
+
+    <script>
+
+     function mouseDown(){
+     document.getElementById('mytext').style.color = 'red';
+     }
+
+     function mouseUp(){
+
+         document.getElementById('mytext').style.color = 'black';
+     }
+
+
+
+    </script>
+</body>
+</html>
